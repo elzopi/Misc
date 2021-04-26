@@ -1,0 +1,12 @@
+
+'Code to catch Google Calendar meeting accepted, need to set GetCurrentItem before testing
+
+
+If TypeOf GetCurrentItem Is Outlook.MailItem Then
+    Set oMail = GetCurrentItem
+    Debug.Print "Sender - " & oMail.Sender
+    If oMail.Sender = "calendar-notification@google.com" Then
+       Debug.Print "email from Google Calendar" & oMail.Subject
+    End If
+    
+Else
