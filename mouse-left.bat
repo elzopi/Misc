@@ -1,0 +1,1 @@
+"e:\My Documents\mousebuttons.exe" -hand=left
